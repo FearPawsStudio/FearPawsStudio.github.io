@@ -1,0 +1,171 @@
+html {
+    background-color: #cfb6ff;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo, #title {
+    display: inline;
+    vertical-align: middle; 
+}
+
+#logo {
+    width: 48px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #434343;
+    border-color: #fff;
+}
+
+#language-dropdown {
+    position: relative;
+}
+
+#selected-flag {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#language-dropdown:hover #dropdown-menu {
+    display: block;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#dropdown-menu li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+#dropdown-menu img {
+    width: 20px;
+    height: 15px; 
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#container {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-footer {
+    list-style: none;
+    display: flex;
+}
+
+#contact-footer li {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#contact-footer li:first-child {
+    margin-left: 0;
+}
+
+#contact-footer li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s;
+}
+
+#contact-footer li a:hover {
+    background-color: #434343;
+}
+
+#contact-footer li a.instagram:hover {
+    color: #E4405F;
+}
+
+#contact-footer li a.twitter:hover {
+    color: #1DA1F2;
+}
+
+#contact-footer li a.youtube:hover {
+    color: #FF0000;
+}
+
+#contact-footer li a.discord:hover {
+    color: #5865F2;
+}
+
+#contact-footer li a.itch-io:hover {
+    color: #FF6600;
+}

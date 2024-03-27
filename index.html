@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FearPawsStudio - Inicio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-rg7YVaGPx94udvHtg4vbeQd8x0+r3IMTuCl1/NT0MUEeD7bL95Lhz+PcVDr2omw1+1yzU95UmvnK6xdLsw1seg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>FearPawsStudio - Inicio</title>
 
-<body>  
-    <header>
-        <img src="logo.png" alt="FearPawsStudio" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="games.html">Juegos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymus"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>  
+        <header>
+            <div id="logo-container" onclick="window.location.href='index.html';">
+                <img id="logo" src="img/logo.png">
+                <p id="title">Fear Paws Studio</p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="language-dropdown">
+                        <a href="#">
+                            <img id="selected-flag" src="img/bandera_esp.png" alt="Spanish">
+                        </a>
+                        <ul id="dropdown-menu">
+                            <li><a href="#" onclick="cambiarIdioma('es')"><img src="img/bandera_esp.png" alt="Spanish"> Español</a></li>
+                            <li><a href="#" onclick="cambiarIdioma('en')"><img src="img/bandera_eng.png" alt="English"> English</a></li>
+
+                            <!-- <select id="language-select">
+                                <option value="es">Español</option>
+                                <option value="en">English</option>
+                            </select> -->
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="container">
+            <section id="company">
+                <h1>Bienvenido a FearPawsStudio</h1>
+                <p>¡Descubre mundos extraordinarios a través de nuestros juegos indie!</p>
+                <a href="games.html" id="button">Explora Nuestros Juegos</a>
+            </section>
+
+            <section id="latest-games">
+                <h2>Últimos Lanzamientos</h2>
+            </section>
+
+            <section id="about">
+                <h2>Acerca de Nosotros</h2>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="footer-year">2024</span> FearPawsStudio. Todos los derechos reservados.</p>
+
+            <script>
+                document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+            </script>
+
+            <ul id="contact-footer">
+                <li><a href="https://www.instagram.com/fearpaws_studio/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/FearPawsStudio" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCLkD0_CxcGASBkyYh-_u2oQ" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://discord.gg/XZkdk2fP" class="discord"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://fear-paws-studio.itch.io/" class="itch-io"><i class="fab fa-itch-io"></i></a></li>
             </ul>
-        </nav>
-    </header>
+        </footer>
 
-    <main>
-        <section class="company">
-            <h1>Bienvenido a FearPawsStudio</h1>
-            <p>¡Descubre mundos extraordinarios a través de nuestros juegos indie!</p>
-            <a href="games.html" class="btn">Explora Nuestros Juegos</a>
-        </section>
-
-        <section class="latest-games">
-            <h2>Últimos Lanzamientos</h2>
-        </section>
-
-        <section class="about">
-            <h2>Acerca de Nosotros</h2>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="footer-year">2024</span> FearPawsStudio. Todos los derechos reservados.</p>
-        <script>
-            document.getElementById("footer-year").innerHTML = new Date().getFullYear();
-        </script>
-        <ul id="contact-footer">
-            <li><a href="https://www.instagram.com/aeren_28/" class="instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/shiber_satan" class="twitter"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.tiktok.com/@eyr4h_28" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
-            <li><a href="https://www.twitch.tv/eyrah28" class="twitch"><i class="fab fa-twitch"></i></a></li>
-            <li><a href="https://www.youtube.com/@user-rb9rc3ws1g" class="youtube"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-    </footer>
-</body>
+        <script src="js/base.js"></script>
+    </body>
 </html>
