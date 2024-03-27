@@ -169,3 +169,7 @@ footer {
 #contact-footer li a.itch-io:hover {
     color: #FF6600;
 }
+
+#contact-footer li a.gmail:hover {
+    color: #DB4437;
+}
