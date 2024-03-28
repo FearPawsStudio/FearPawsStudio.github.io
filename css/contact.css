@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .social-media-card {
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: calc(25% - 40px); 
-    padding: 20px;
+    padding: 5px;
     background: #121017;
     border-radius: 24px;
     margin: 20px; 
@@ -39,6 +40,7 @@
 .social-media-card p {
     font-size: 20px; 
     margin-bottom: 30px;
+    margin-top: 20px;
     color: #fff;
 }
 
@@ -52,7 +54,8 @@
     border-radius: 40px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 10px; 
+    margin-top: auto; 
+    margin-bottom: 5px; 
 }
 
 .social-media-card button:hover {
@@ -70,7 +73,7 @@
 }
 
 #youtube-card {
-    background: #b61616;
+    background: #b61e1e;
 }
 
 #discord-card {
