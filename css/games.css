@@ -2,48 +2,65 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px; 
 }
 
-#game-details {
+#our-games {
     text-align: center;
-    max-width: 60%;
-    margin: 0 auto;
+}
+
+#our-games h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+.list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videogames-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
     padding: 20px;
-}
-
-#game-details h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-#game-details img {
-    max-width: 60%;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#game-details p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-#game-details h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-#button {
-    display: inline-block;
-    background-color: #65c2ab;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #b2eee4;
+    border-radius: 5%;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
 }
 
-#button:hover {
-    background-color: #4baa91;
+.videogames-items p {
+    text-align: center; 
+}
+
+#videogames li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#videogames span:hover {
+    background-color: #b7b2ee;
+}
+
+#videogames img {
+    width: 350px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+#videogames a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 }

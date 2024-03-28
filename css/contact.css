@@ -1,50 +1,46 @@
+#social-media-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
 .social-media-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80vw;
-    max-width: 800px;
-    padding: 50px;
+    width: calc(25% - 40px); 
+    padding: 20px;
     background: #121017;
     border-radius: 24px;
-    margin: 50px auto;
+    margin: 20px; 
     text-align: center;
-    flex: 0 0 calc(20% - 40px);
-    margin: 20px;
 }
 
 .social-media-card img {
-    max-width: 280px;
-    width: 100%;
-    height: auto;
+    width: 150px; 
+    height: 150px; 
     margin-bottom: 20px;
-    border-radius: 50%;
-}
-
-.social-media-card div {
-    max-width: 400px;
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: center;
 }
 
 .social-media-card h2 {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 36px;
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
 .social-media-card h3 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
     margin: 0;
-    opacity: 0.75;
 }
 
 .social-media-card p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 20px; 
     margin-bottom: 30px;
-    opacity: 0.5;
+    color: #fff;
 }
 
 .social-media-card button {
@@ -52,13 +48,46 @@
     background: transparent;
     color: #f8f8f8;
     font-family: inherit;
-    padding: 16px 26px;
-    font-size: 16px;
+    padding: 8px 16px; 
+    font-size: 20px; 
     border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
 }
 
-.social-media-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.social-media-card button:hover {
+    background-color: #dadada; 
+    color: #000;
+    font-weight: bold;
+}
+
+#instagram-card {
+    background: #C13584;
+}
+
+#twitter-card {
+    background: #1dace4;
+}
+
+#youtube-card {
+    background: #b61616;
+}
+
+#discord-card {
+    background: #7289DA;
+}
+
+#itchio-card {
+    background: #ce1d47;
+}
+
+#gmail-card {
+    background: #b72b26;
+}
+
+@media screen and (max-width: 768px) {
+    .social-media-card {
+        width: calc(50% - 40px); 
+    }
 }

@@ -1,32 +1,40 @@
-/* Estilos del contenido principal */
+main {
+    overflow-y: hidden;
+}
+
 #container {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
 }
 
-/* Estilos del título principal */
-h1 {
-    font-size: 32px;
+#company {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15%;
+}
+
+#company h1 {
+    font-size: 36px;
     color: #333;
+    margin-bottom: 10px;
+}
+
+#company p {
+    font-size: 20px;
+    color: #454545;
     margin-bottom: 20px;
 }
 
-/* Estilos del párrafo */
-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Estilos del botón */
 #button {
     display: inline-block;
     background-color: #65c2ab;
     color: #fff;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -35,16 +43,4 @@ section p {
 
 #button:hover {
     background-color: #4baa91;
-}
-
-/* Estilos de las secciones */
-section {
-    margin-bottom: 40px; /* Espacio entre secciones */
-}
-
-/* Estilos de los títulos de secciones */
-section h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
 }

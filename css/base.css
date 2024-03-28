@@ -67,7 +67,7 @@ nav ul li a:hover {
     border-color: #fff;
 }
 
-#language-dropdown {
+/* #language-dropdown {
     position: relative;
 }
 
@@ -102,7 +102,7 @@ nav ul li a:hover {
     height: 15px; 
     vertical-align: middle;
     margin-right: 5px;
-}
+} */
 
 #container {
     flex: 1;

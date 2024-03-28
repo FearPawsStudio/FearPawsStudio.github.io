@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>FearPawsStudio - Inicio</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymus"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/aboutus.css">
+    </head>
+
+    <body>  
+        <header>
+            <div id="logo-container" onclick="window.location.href='index.html';">
+                <img id="logo" src="img/logos/logo_bg.png">
+                <p id="title">Fear Paws Studio</p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="container">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to Fear Paws Studio! We are a passionate team of game developers dedicated to creating immersive and captivating gaming experiences. Our mission is to bring joy and excitement to players around the world through our innovative games.</p>
+                <p>At Fear Paws Studio, we believe in the power of storytelling and creativity. We strive to push the boundaries of game design and technology to deliver unforgettable adventures.</p>
+                <p>Join us on our journey as we continue to explore new worlds, forge new friendships, and inspire players of all ages. Together, let's make gaming an extraordinary experience!</p>
+            </section>
+
+            <section id="logos">
+                <h2>Logos</h2>
+                <img class="logo" src="img/logos/logo_bg_text.png">
+                <img class="logo" src="img/logos/logo_bg.png">
+                <img class="logo" src="img/logos/logo_nobg.png">
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; <span id="footer-year">2024</span> FearPawsStudio. All rights reserved.</p>
+
+            <script>
+                document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+            </script>
+
+            <ul id="contact-footer">
+                <li><a href="https://www.instagram.com/fearpaws_studio/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/FearPawsStudio" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCLkD0_CxcGASBkyYh-_u2oQ" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://discord.gg/XZkdk2fP" class="discord"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://fear-paws-studio.itch.io/" class="itch-io"><i class="fab fa-itch-io"></i></a></li>
+                <li><a href="mailto:fearpaws.studio@gmail.com" class="gmail"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="js/base.js"></script>
+    </body>
+</html>

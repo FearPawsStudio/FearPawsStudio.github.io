@@ -19,16 +19,17 @@
     <body>  
         <header>
             <div id="logo-container" onclick="window.location.href='index.html';">
-                <img id="logo" src="img/logo.png">
+                <img id="logo" src="img/logos/logo_bg.png">
                 <p id="title">Fear Paws Studio</p>
             </div>
             
             <nav>
                 <ul>
-                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li id="language-dropdown">
+                    <!-- <li id="language-dropdown">
                         <a href="#">
                             <img id="selected-flag" src="img/bandera_esp.png" alt="Spanish">
                         </a>
@@ -36,34 +37,26 @@
                             <li><a href="#" onclick="cambiarIdioma('es')"><img src="img/bandera_esp.png" alt="Spanish"> Español</a></li>
                             <li><a href="#" onclick="cambiarIdioma('en')"><img src="img/bandera_eng.png" alt="English"> English</a></li>
 
-                            <!-- <select id="language-select">
+                            <select id="language-select">
                                 <option value="es">Español</option>
                                 <option value="en">English</option>
-                            </select> -->
+                            </select>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </header>
 
         <main id="container">
             <section id="company">
-                <h1>Bienvenido a FearPawsStudio</h1>
-                <p>¡Descubre mundos extraordinarios a través de nuestros juegos indie!</p>
-                <a href="games.html" id="button">Explora Nuestros Juegos</a>
-            </section>
-
-            <section id="latest-games">
-                <h2>Últimos Lanzamientos</h2>
-            </section>
-
-            <section id="about">
-                <h2>Acerca de Nosotros</h2>
+                <h1>Welcome to FearPawsStudio</h1>
+                <p>Discover extraordinary worlds through our indie games!</p>
+                <a href="games.html" id="button">Explore Our Games</a>
             </section>
         </main>
 
         <footer>
-            <p>&copy; <span id="footer-year">2024</span> FearPawsStudio. Todos los derechos reservados.</p>
+            <p>&copy; <span id="footer-year">2024</span> FearPawsStudio. All rights reserved.</p>
 
             <script>
                 document.getElementById("footer-year").innerHTML = new Date().getFullYear();
