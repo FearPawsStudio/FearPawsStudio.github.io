@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
 .social-media-card {
@@ -71,11 +70,7 @@
 }
 
 #youtube-card {
-    background: #00acee;
-}
-
-#youtube-card {
-    background: #b90505;
+    background: #b61616;
 }
 
 #discord-card {
